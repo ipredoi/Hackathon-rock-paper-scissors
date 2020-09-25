@@ -9,16 +9,27 @@ e.g. rock vs rock is a draw, paper vs rock is a paper win, etc.*/
 
 let playerMove = ["rock", "paper", "scissors"];
 let computerMove = ["rock", "paper", "scissors"];
-
-for (let iPlayer = 0; iPlayer < playerMove.length; iPlayer++) {
-
-    for (let iComputer = 0; iComputer < computerMove.length; iComputer++) {
-
-        if (playerMove[iPlayer] === computerMove[iComputer]) {
-            console.log("draw")
-        }
-    }
+if (playerMove[0] && computerMove[1]) {
+    console.log("rock lose to paper!")
 }
+if (playerMove[0] && computerMove[2]) {
+    console.log("rock beats scissors !");
+}
+if (playerMove[1] && computerMove[0]) {
+    console.log("paper beats rock!")
+}
+if (playerMove[2] && computerMove[1]) {
+    console.log("scissors beats paper!")
+}
+if (playerMove[1] && computerMove[2]) {
+    console.log("paper loses to scissors!")
+}
+if (playerMove[2] && computerMove[0]) {
+    console.log("scissors loses to rock!")
+}
+
+
+
 
 
 
