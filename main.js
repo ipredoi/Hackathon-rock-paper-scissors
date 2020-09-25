@@ -1,6 +1,6 @@
 //Task 1
 
-let playerMove = "rock";
+let playerMove = prompt("User input value");
 let computerMove = Math.floor(Math.random() * 3);
 
 if (computerMove < 1) {
@@ -10,8 +10,6 @@ if (computerMove < 1) {
 } else {
     computerMove = "scissors";
 }
-console.log(computerMove);
-
 /*if player move is rock and computer move is rock = draw
 if player move is rock and computer move is paper = player lose
 if player move is rock...*/
@@ -33,7 +31,6 @@ function getWinner(player1, player2) {
 let result = getWinner("rock", "paper");
 ```
 This will be deemed as complete when the function can be called with any combination of valid moves and returns the appropriate number. */
-playerMove = prompt("User input value");
 
 function getWinner(playerMove, computerMove) {
     if (playerMove === "rock" && computerMove === "rock") {
@@ -67,20 +64,28 @@ function getWinner(playerMove, computerMove) {
     }
 }
 
+
 alert(getWinner(playerMove, computerMove));
 
-
+while (confirm("play again" === true)) {
 /*## Task 3: User Input
 
 Using `prompt`, get a user inputted value for the player move. Then call your function with that value and the hard coded computer move. Display the result using `alert`. */
 
-playerMove = prompt("User input value");
 
-console.log(playerMove);
+
 /*## Task 4: Computer Player
 
 Write a function that generates a random computer move (`Math.random()` might be useful...). Use that function to make a dynamic
- game where the computer move is randomly chosen every time. */
+ game where the computer move is randomly chosen every time.
+
+ ## Task 5: Game Loop
+
+Now that we have a fully functioning game, our next step is to have it run as many times as people like without having to refresh the page.
+
+Use a `while loop` and `confirm`.
+
+This will be deemed as complete when a player can keep playing indefinitely, and has the option to stop playing after every round.*/
 
 
 
