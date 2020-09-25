@@ -10,13 +10,16 @@ e.g. rock vs rock is a draw, paper vs rock is a paper win, etc.*/
 let playerMove = ["rock", "paper", "scissors"];
 let computerMove = ["rock", "paper", "scissors"];
 
-for (let iPlayer=0; iPlayer < playerMove.length; iPlayer++){
-    console.log(playerMove[iPlayer]);
+for (let iPlayer = 0; iPlayer < playerMove.length; iPlayer++) {
+
+    for (let iComputer = 0; iComputer < computerMove.length; iComputer++) {
+
+        if (playerMove[iPlayer] === computerMove[iComputer]) {
+            console.log("draw")
+        }
+    }
 }
 
-for (let iComputer=0; iComputer < computerMove.length; iComputer++){
-    console.log(computerMove[iComputer]);
-}
 
 
 /* create 3 moves for computer and user rock paper and scissors.
@@ -28,4 +31,3 @@ rock + rock = draw
 scissors + paper = scissors win
 scissors + scissors = draw
 paper + paper = draw*/
-
