@@ -54,8 +54,8 @@ function getWinner(player1, player2) {
 
 let result = getWinner("rock", "paper");
 ```
-
 This will be deemed as complete when the function can be called with any combination of valid moves and returns the appropriate number. */
+playerMove= prompt("User input value");
 
 function getWinner(playerMove, computerMove) {
     if (playerMove === "rock" && computerMove === "rock") {
@@ -88,6 +88,20 @@ function getWinner(playerMove, computerMove) {
         return(1);
     }
 }
+
+alert (getWinner(playerMove, computerMove));
+
+
+/*## Task 3: User Input
+
+Using `prompt`, get a user inputted value for the player move. Then call your function with that value and the hard coded computer move. Display the result using `alert`. */
+
+playerMove= prompt("User input value");
+
+console.log(playerMove);
+
+
+
 
 
 
