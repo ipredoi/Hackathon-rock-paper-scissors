@@ -1,7 +1,17 @@
 //Task 1
 
 let playerMove = "rock";
-let computerMove = "paper";
+let computerMove = Math.floor(Math.random() * 3);
+
+if (computerMove < 1) {
+    computerMove = "rock"
+} else if (computerMove >= 2) {
+    computerMove = "paper";
+} else {
+    computerMove = "scissors";
+}
+console.log(computerMove);
+
 /*if player move is rock and computer move is rock = draw
 if player move is rock and computer move is paper = player lose
 if player move is rock...*/
@@ -67,6 +77,11 @@ Using `prompt`, get a user inputted value for the player move. Then call your fu
 playerMove = prompt("User input value");
 
 console.log(playerMove);
+/*## Task 4: Computer Player
+
+Write a function that generates a random computer move (`Math.random()` might be useful...). Use that function to make a dynamic
+ game where the computer move is randomly chosen every time. */
+
 
 
 
