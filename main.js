@@ -7,8 +7,17 @@ This will be deemed as complete when all permutations of the three possible move
 
 e.g. rock vs rock is a draw, paper vs rock is a paper win, etc.*/
 
-let playerMove = ["rock", "paper", "scissors"]
-let computerMove = ["rock", "paper", "scissors"]
+let playerMove = ["rock", "paper", "scissors"];
+let computerMove = ["rock", "paper", "scissors"];
+
+for (let iPlayer=0; iPlayer < playerMove.length; iPlayer++){
+    console.log(playerMove[iPlayer]);
+}
+
+for (let iComputer=0; iComputer < computerMove.length; iComputer++){
+    console.log(computerMove[iComputer]);
+}
+
 
 /* create 3 moves for computer and user rock paper and scissors.
 when player selects rock, paper or scissors the computer resoponds with a random selection of rock paper or scissors.
