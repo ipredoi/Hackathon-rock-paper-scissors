@@ -1,8 +1,39 @@
 //Task 1
 
-let playerMove = ["rock", "paper", "scissors"];
-let computerMove = ["rock", "paper", "scissors"];
+let playerMove = "rock";
+let computerMove = "paper";
+/*if player move is rock and computer move is rock = draw
+if player move is rock and computer move is paper = player lose
+if player move is rock...*/
+if (playerMove === "rock" && computerMove === "rock") {
+    console.log("draw")
+}
+if (playerMove === "rock" && computerMove === "paper") {
+    console.log("lose")
+}
+if (playerMove === "rock" && computerMove === "scissors") {
+    console.log("win")
+}
 
+if (playerMove === "scissors" && computerMove === "scissors") {
+    console.log("draw")
+}
+if (playerMove === "scissors" && computerMove === "rock") {
+    console.log("lose")
+}
+if (playerMove === "scissors" && computerMove === "paper") {
+    console.log("win")
+}
+
+if (playerMove === "paper" && computerMove === "paper") {
+    console.log("draw")
+}
+if (playerMove === "paper" && computerMove === "scissors") {
+    console.log("lose")
+}
+if (playerMove === "paper" && computerMove === "rock") {
+    console.log("win")
+}
 
 
 
@@ -26,18 +57,19 @@ let result = getWinner("rock", "paper");
 
 This will be deemed as complete when the function can be called with any combination of valid moves and returns the appropriate number. */
 
-function getWinner(playerMove, computerMove){
-    if ((playerMove[0] !== computerMove[2])||(playerMove[1] !== computerMove[0])||(playerMove[2] !== computerMove[1])) {
-        console.log(1);
-    }else{
-    if ((playerMove[0] === computerMove[0])||(playerMove[1] === computerMove[1])||(playerMove[2] === computerMove[2])) {
-        console.log(0);
-    }   
-    if ((playerMove[1] !== computerMove[2])||(playerMove[2] !== computerMove[0])||(playerMove[0] !== computerMove[1])) {
-        console.log(-1);
-    }}
-    return;
-}   
+function getWinner(playerMove, computerMove) {
+    if ((playerMove[0] !== computerMove[2]) || (playerMove[1] !== computerMove[0]) || (playerMove[2] !== computerMove[1])) {
+        return (1);
+    } else {
+        if ((playerMove[0] === computerMove[0]) || (playerMove[1] === computerMove[1]) || (playerMove[2] === computerMove[2])) {
+            return (0);
+        }
+        if ((playerMove[1] !== computerMove[2]) || (playerMove[2] !== computerMove[0]) || (playerMove[0] !== computerMove[1])) {
+            return (-1);
+        }
+    }
+
+}
 
 
 
