@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <script src="main.js">
-    </script>
+<body> 
+    <div class="background" id="background"></div>
     <div class="title"><h1>Rock Paper Scissors GAME</h1></div>
     
     <div id="gameContainer">
@@ -31,21 +30,22 @@
     <img class = "imageCard" id="playerChoice" src="./images/rockPlayer.png">
 </div>
 <div id="gameCard">
-<div >
+<div class="roundsContainer" >
     <h2>Rounds</h2>
     <h3 id="roundsNumber">0</h3>
 </div>
-<div>
-    <button class="button">👊</button>
-    <button class="button">✌</button>
-    <button class="button">✋</button>
+<div id="buttonsContainer">
+    <button class="button"  id="rockButton">👊</button>
+    <button class="button" id="scissorsButton">✌</button>
+    <button class="button" id="paperButton">✋</button>
+    <button class="button" id="reset">❌</button>
 </div>
 </div>
 <div>
     <img class = "imageCard"id="computerChoice" src="./images/rockComputer.png">
 </div>
 
-
+<script src="main.js"> </script>
 </body>
 
 </html>
