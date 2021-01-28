@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    <title>R-P-S Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <script src="main.js">
-
-
-
     </script>
+    <div class="title"><h1>Rock Paper Scissors GAME</h1></div>
+    
+    <div id="gameContainer">
+<div id=scoresContainer>
+<div class="scoreCard">
+    <h2>WIN</h2>
+    <h2 class="scoreText" id="playerScore">0</h2>
+</div>
+<div class="scoreCard">
+    <h2>TIES</h2>
+    <h2 class="scoreText" id="tiesScore">0</h2>
+</div>
+<div class="scoreCard">
+    <h2>WIN</h2>
+    <h2 class="scoreText" id="computerScore">0</h2>
+</div>
+</div>
+<div class="gameBoard" >
+<div>
+    <img class = "imageCard" id="playerChoice" src="./images/rockPlayer.png">
+</div>
+<div id="gameCard">
+<div >
+    <h2>Rounds</h2>
+    <h3 id="roundsNumber">0</h3>
+</div>
+<div>
+    <button class="button">👊</button>
+    <button class="button">✌</button>
+    <button class="button">✋</button>
+</div>
+</div>
+<div>
+    <img class = "imageCard"id="computerChoice" src="./images/rockComputer.png">
+</div>
+
 
 </body>
 

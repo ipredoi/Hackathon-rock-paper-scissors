@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.gameBoard {
+  justify-self: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+#gameCard {
+  justify-self: center;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.imageCard {
+  border-radius: 40px;
+  height: 400px;
+}
+
+#scoresContainer {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+
+.scoreText {
+  margin: 0 !important;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}

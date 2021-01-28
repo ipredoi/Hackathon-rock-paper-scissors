@@ -1,15 +1,19 @@
 //Task 1
 
 let playerMove = prompt("User input value");
-let computerMove = Math.floor(Math.random() * 3);
+let randomInt = Math.floor(Math.random() * 3);
+console.log(randomInt);
 
-if (computerMove < 1) {
+
+if (randomInt < 1) {
     computerMove = "rock"
-} else if (computerMove >= 2) {
+} else if (randomInt >= 2) {
     computerMove = "paper";
 } else {
     computerMove = "scissors";
 }
+
+console.log(computerMove);
 /*if player move is rock and computer move is rock = draw
 if player move is rock and computer move is paper = player lose
 if player move is rock...*/
@@ -65,9 +69,9 @@ function getWinner(playerMove, computerMove) {
 }
 
 
-alert(getWinner(playerMove, computerMove));
+console.log((getWinner(playerMove, computerMove)));
 
-while (confirm("play again" === true)) {
+//while (confirm("play again" === true)) {
 /*## Task 3: User Input
 
 Using `prompt`, get a user inputted value for the player move. Then call your function with that value and the hard coded computer move. Display the result using `alert`. */
