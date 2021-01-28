@@ -4,6 +4,7 @@ body {
   align-content: center;
   justify-content: space-around;
   align-content: stretch;
+  background: linear-gradient(to right, #334d50, #cbcaa5);
 }
 
 .gameBoard {
@@ -31,6 +32,7 @@ body {
 .imageCard {
   border-radius: 40px;
   height: 400px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 30px 90px;
 }
 
 #scoresContainer {
@@ -63,7 +65,7 @@ h1 {
 
 .button {
   position: relative;
-  background-color: #1a8d88;
+  background-color: #222222;
   border: none;
   margin: 10px;
   width: 50px;
@@ -72,7 +74,8 @@ h1 {
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 30px;
 }
 
 .button:hover {
@@ -83,7 +86,7 @@ h1 {
 
 .button:after {
   content: "";
-  background: #177661;
+  background: #414141;
   display: block;
   position: absolute;
   padding-top: 300%;
