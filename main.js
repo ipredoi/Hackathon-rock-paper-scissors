@@ -214,6 +214,18 @@ function resetGame() {
   tieScore.innerText = `${ties}`;
 }
 
+// function playerName() {}
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    let name = prompt("Please insert your name to play the game");
+    let text = document.getElementById("playerName");
+    text.innerText = `${name}`;
+  },
+  false
+);
+
 resetButton.addEventListener("click", resetGame);
 rockButton.addEventListener("click", pickTheRock);
 scissorsButton.addEventListener("click", pickTheScissors);
