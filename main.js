@@ -108,122 +108,122 @@ let paperButton = document.getElementById("paperButton");
 let resetButton = document.getElementById("reset");
 
 function pickTheRock() {
-  rounds += 1;
-  roundsNumber.innerText = `${rounds}`;
-  playerChoiceImageCard.src = "./images/rockPlayer.png";
-  let randomNumber = Math.floor(Math.random() * 3) + 1;
-  console.log(randomNumber);
-  if (randomNumber === 1) {
-    console.log("test");
-    ties = ties + 1;
-    console.log(ties);
-    tieScore.innerText = `${ties}`;
-    imageUrl = "rockComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  } else if (randomNumber === 2) {
-    console.log("computer wins");
-    loss = loss + 1;
-    computerScore.innerText = `${loss}`;
-    imageUrl = "paperComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  } else if (randomNumber === 3) {
-    console.log("you won");
-    wins = wins + 1;
-    playerScore.innerText = `${wins}`;
-    imageUrl = "scissorsComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  }
+	rounds += 1;
+	roundsNumber.innerText = `${rounds}`;
+	playerChoiceImageCard.src = "./images/rockPlayer.png";
+	let randomNumber = Math.floor(Math.random() * 3) + 1;
+	console.log(randomNumber);
+	if (randomNumber === 1) {
+		console.log("test");
+		ties = ties + 1;
+		console.log(ties);
+		tieScore.innerText = `${ties}`;
+		imageUrl = "rockComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	} else if (randomNumber === 2) {
+		console.log("computer wins");
+		loss = loss + 1;
+		computerScore.innerText = `${loss}`;
+		imageUrl = "paperComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	} else if (randomNumber === 3) {
+		console.log("you won");
+		wins = wins + 1;
+		playerScore.innerText = `${wins}`;
+		imageUrl = "scissorsComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	}
 }
 
 function pickTheScissors() {
-  rounds += 1;
-  roundsNumber.innerText = `${rounds}`;
-  playerChoiceImageCard.src = "./images/scissorsPlayer.png";
-  let randomNumber = Math.floor(Math.random() * 3) + 1;
-  console.log(randomNumber);
-  if (randomNumber === 1) {
-    console.log("test");
-    ties = ties + 1;
-    console.log(ties);
-    tieScore.innerText = `${ties}`;
-    imageUrl = "scissorsComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  } else if (randomNumber === 2) {
-    console.log("computer wins");
-    loss = loss + 1;
-    computerScore.innerText = `${loss}`;
-    imageUrl = "rockComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  } else if (randomNumber === 3) {
-    console.log("you won");
-    wins = wins + 1;
-    playerScore.innerText = `${wins}`;
-    imageUrl = "paperComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  }
+	rounds += 1;
+	roundsNumber.innerText = `${rounds}`;
+	playerChoiceImageCard.src = "./images/scissorsPlayer.png";
+	let randomNumber = Math.floor(Math.random() * 3) + 1;
+	console.log(randomNumber);
+	if (randomNumber === 1) {
+		console.log("test");
+		ties = ties + 1;
+		console.log(ties);
+		tieScore.innerText = `${ties}`;
+		imageUrl = "scissorsComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	} else if (randomNumber === 2) {
+		console.log("computer wins");
+		loss = loss + 1;
+		computerScore.innerText = `${loss}`;
+		imageUrl = "rockComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	} else if (randomNumber === 3) {
+		console.log("you won");
+		wins = wins + 1;
+		playerScore.innerText = `${wins}`;
+		imageUrl = "paperComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	}
 }
 
 function pickThePaper() {
-  rounds += 1;
-  roundsNumber.innerText = `${rounds}`;
+	rounds += 1;
+	roundsNumber.innerText = `${rounds}`;
 
-  playerChoiceImageCard.src = "./images/paperPlayer.png";
-  let randomNumber = Math.floor(Math.random() * 3) + 1;
-  console.log(randomNumber);
-  if (randomNumber === 1) {
-    console.log("test");
-    ties = ties + 1;
-    console.log(ties);
-    tieScore.innerText = `${ties}`;
-    imageUrl = "paperComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  } else if (randomNumber === 2) {
-    console.log("computer wins");
-    loss = loss + 1;
-    computerScore.innerText = `${loss}`;
-    imageUrl = "scissorsComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  } else if (randomNumber === 3) {
-    console.log("you won");
-    wins = wins + 1;
-    playerScore.innerText = `${wins}`;
-    imageUrl = "rockComputer.png";
-    console.log(imageUrl);
-    computerChoiceImageCard.src = `./images/${imageUrl}`;
-  }
+	playerChoiceImageCard.src = "./images/paperPlayer.png";
+	let randomNumber = Math.floor(Math.random() * 3) + 1;
+	console.log(randomNumber);
+	if (randomNumber === 1) {
+		console.log("test");
+		ties = ties + 1;
+		console.log(ties);
+		tieScore.innerText = `${ties}`;
+		imageUrl = "paperComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	} else if (randomNumber === 2) {
+		console.log("computer wins");
+		loss = loss + 1;
+		computerScore.innerText = `${loss}`;
+		imageUrl = "scissorsComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	} else if (randomNumber === 3) {
+		console.log("you won");
+		wins = wins + 1;
+		playerScore.innerText = `${wins}`;
+		imageUrl = "rockComputer.png";
+		console.log(imageUrl);
+		computerChoiceImageCard.src = `./images/${imageUrl}`;
+	}
 }
 
 function resetGame() {
-  rounds = 0;
-  roundsNumber.innerText = `${rounds}`;
-  computerChoiceImageCard.src = "./images/rockComputer.png";
-  playerChoiceImageCard.src = "./images/rockPlayer.png";
-  wins = 0;
-  playerScore.innerText = `${wins}`;
-  loss = 0;
-  computerScore.innerText = `${loss}`;
-  ties = 0;
-  tieScore.innerText = `${ties}`;
+	rounds = 0;
+	roundsNumber.innerText = `${rounds}`;
+	computerChoiceImageCard.src = "./images/rockComputer.png";
+	playerChoiceImageCard.src = "./images/rockPlayer.png";
+	wins = 0;
+	playerScore.innerText = `${wins}`;
+	loss = 0;
+	computerScore.innerText = `${loss}`;
+	ties = 0;
+	tieScore.innerText = `${ties}`;
 }
 
 // function playerName() {}
 
 document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    let name = prompt("Please insert your name to play the game");
-    let text = document.getElementById("playerName");
-    text.innerText = `${name}`;
-  },
-  false
+	"DOMContentLoaded",
+	function () {
+		let name = prompt("Please insert your name to play the game");
+		let text = document.getElementById("playerName");
+		text.innerText = `${name}`;
+	},
+	false
 );
 
 resetButton.addEventListener("click", resetGame);
